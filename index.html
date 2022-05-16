@@ -2,8 +2,15 @@
 <body style ="background-color:black; color:white; text-align:center;">
   <h1>KeySystem</h1>
   <h2>Updates every 24Hrs</h2>
-  <p>
-6zq=V)AXiT'qhuPD=b+nO(Dgt^Q!Zoue9-b0g&9b
+  <p id = "myText">
 </p>
 </body>
 </html>
+<script>
+fetch('https://raw.githubusercontent.com/mattqze/test/main/keys.txt')
+  .then(response => response.text())
+  .then(data => {
+  	// Do something with your data
+  	document.getElementById("myText").innerHTML = data;
+  });
+</script>
