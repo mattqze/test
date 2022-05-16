@@ -10,7 +10,6 @@
 fetch('https://raw.githubusercontent.com/mattqze/test/main/keys.txt')
   .then(response => response.text())
   .then(data => {
-  	// Do something with your data
   	document.getElementById("myText").innerHTML = data;
   });
 </script>
